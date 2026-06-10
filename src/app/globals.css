@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom right, #eff6ff 0%, #ffffff 50%, #f0f9ff 100%);
+}
+
+.card-hover {
+  transition: all 0.2s ease;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.card-hover:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.kit-card {
+  transition: all 0.2s ease;
+}
+.kit-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
